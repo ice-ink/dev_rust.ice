@@ -1,0 +1,12 @@
+# Cargo.toml at repo root
+[workspace]
+members = [
+    "my_lib",           # Your library crate
+    "sandbox",          # Sandbox for testing
+    "examples/*",       # Example projects
+]
+resolver = "2"
+
+# Optional: Set default workspace dependencies
+[workspace.dependencies]
+some_dependency = "1.0"
